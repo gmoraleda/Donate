@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F124157B22CB92CB00CC4503 /* ReservationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F124157A22CB92CB00CC4503 /* ReservationsManager.swift */; };
+		F124157D22CB9CC500CC4503 /* HelperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F124157C22CB9CC500CC4503 /* HelperExtensions.swift */; };
+		F18A42FC22CB82FF00CE6EE6 /* CarReservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A42FB22CB82FF00CE6EE6 /* CarReservation.swift */; };
 		F1E68B3922CB79F9005A52B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E68B3822CB79F9005A52B3 /* AppDelegate.swift */; };
 		F1E68B3B22CB79F9005A52B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E68B3A22CB79F9005A52B3 /* ViewController.swift */; };
 		F1E68B3E22CB79F9005A52B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E68B3C22CB79F9005A52B3 /* Main.storyboard */; };
@@ -17,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F124157A22CB92CB00CC4503 /* ReservationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsManager.swift; sourceTree = "<group>"; };
+		F124157C22CB9CC500CC4503 /* HelperExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperExtensions.swift; sourceTree = "<group>"; };
+		F18A42FB22CB82FF00CE6EE6 /* CarReservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarReservation.swift; sourceTree = "<group>"; };
+		F18A42FD22CB84E200CE6EE6 /* Donate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Donate.entitlements; sourceTree = "<group>"; };
 		F1E68B3522CB79F9005A52B3 /* Donate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Donate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E68B3822CB79F9005A52B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1E68B3A22CB79F9005A52B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,13 +66,17 @@
 			isa = PBXGroup;
 			children = (
 				F1E68B3822CB79F9005A52B3 /* AppDelegate.swift */,
-				F1E68B3A22CB79F9005A52B3 /* ViewController.swift */,
-				F1E68B4A22CB7C8A005A52B3 /* DetailViewController.swift */,
-				F1E68B3C22CB79F9005A52B3 /* Main.storyboard */,
-				F1E68B4C22CB7CE1005A52B3 /* DetailViewController.storyboard */,
 				F1E68B3F22CB79FD005A52B3 /* Assets.xcassets */,
-				F1E68B4122CB79FD005A52B3 /* LaunchScreen.storyboard */,
+				F18A42FB22CB82FF00CE6EE6 /* CarReservation.swift */,
+				F1E68B4C22CB7CE1005A52B3 /* DetailViewController.storyboard */,
+				F1E68B4A22CB7C8A005A52B3 /* DetailViewController.swift */,
+				F124157A22CB92CB00CC4503 /* ReservationsManager.swift */,
+				F18A42FD22CB84E200CE6EE6 /* Donate.entitlements */,
 				F1E68B4422CB79FD005A52B3 /* Info.plist */,
+				F1E68B4122CB79FD005A52B3 /* LaunchScreen.storyboard */,
+				F1E68B3C22CB79F9005A52B3 /* Main.storyboard */,
+				F1E68B3A22CB79F9005A52B3 /* ViewController.swift */,
+				F124157C22CB9CC500CC4503 /* HelperExtensions.swift */,
 			);
 			path = Donate;
 			sourceTree = "<group>";
@@ -102,6 +113,11 @@
 				TargetAttributes = {
 					F1E68B3422CB79F9005A52B3 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -143,8 +159,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1E68B4B22CB7C8A005A52B3 /* DetailViewController.swift in Sources */,
+				F124157D22CB9CC500CC4503 /* HelperExtensions.swift in Sources */,
 				F1E68B3B22CB79F9005A52B3 /* ViewController.swift in Sources */,
 				F1E68B3922CB79F9005A52B3 /* AppDelegate.swift in Sources */,
+				F18A42FC22CB82FF00CE6EE6 /* CarReservation.swift in Sources */,
+				F124157B22CB92CB00CC4503 /* ReservationsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,13 +240,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -276,12 +296,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

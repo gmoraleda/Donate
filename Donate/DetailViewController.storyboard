@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zZC-vf-57f">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.15"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,16 +11,67 @@
         <scene sceneID="DD0-pc-AmP">
             <objects>
                 <viewController storyboardIdentifier="DetailViewController" id="zZC-vf-57f" customClass="DetailViewController" customModule="Donate" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="uQx-qF-2Sj" customClass="Deta">
+                    <view key="view" contentMode="scaleToFill" id="uQx-qF-2Sj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zGC-QS-OYs">
+                                <rect key="frame" x="0.0" y="60" width="414" height="414"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reference" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPp-W8-ZUu">
+                                        <rect key="frame" x="166.5" y="0.0" width="81.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gox-GL-ZU9">
+                                        <rect key="frame" x="186.5" y="28.5" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1o-2O-v2f">
+                                        <rect key="frame" x="183.5" y="57" width="47.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2q-dv-JEM">
+                                        <rect key="frame" x="182.5" y="85.5" width="49.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ygz-0K-hof">
+                                        <rect key="frame" x="0.0" y="114" width="414" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="sX1-qp-lS4"/>
+                                        </constraints>
+                                    </mapView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zGC-QS-OYs" firstAttribute="top" secondItem="9SU-Rj-3a4" secondAttribute="top" constant="16" id="0kO-uu-nkW"/>
+                            <constraint firstItem="9SU-Rj-3a4" firstAttribute="trailing" secondItem="zGC-QS-OYs" secondAttribute="trailing" id="1Id-Zx-X78"/>
+                            <constraint firstItem="zGC-QS-OYs" firstAttribute="width" secondItem="9SU-Rj-3a4" secondAttribute="width" id="eNY-eo-2jK"/>
+                            <constraint firstItem="ygz-0K-hof" firstAttribute="width" secondItem="9SU-Rj-3a4" secondAttribute="width" id="owe-yu-T8x"/>
+                            <constraint firstItem="zGC-QS-OYs" firstAttribute="leading" secondItem="9SU-Rj-3a4" secondAttribute="leading" id="vEh-3U-sgf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9SU-Rj-3a4"/>
                     </view>
+                    <connections>
+                        <outlet property="makeLabel" destination="gox-GL-ZU9" id="AQl-Fc-G3x"/>
+                        <outlet property="modelLabel" destination="Y1o-2O-v2f" id="bwE-gF-P3j"/>
+                        <outlet property="pickupMapView" destination="ygz-0K-hof" id="CwJ-Lu-Edw"/>
+                        <outlet property="referenceLabel" destination="LPp-W8-ZUu" id="w3C-9E-Dhi"/>
+                        <outlet property="statusLabel" destination="C2q-dv-JEM" id="jZU-Cp-GDF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ku-yS-w89" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="983" y="19"/>
+            <point key="canvasLocation" x="984" y="19"/>
         </scene>
     </scenes>
 </document>
