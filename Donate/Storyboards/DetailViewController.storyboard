@@ -26,35 +26,40 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gox-GL-ZU9">
                                         <rect key="frame" x="186.5" y="28.5" width="41.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1o-2O-v2f">
                                         <rect key="frame" x="183.5" y="57" width="47.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2q-dv-JEM">
                                         <rect key="frame" x="182.5" y="85.5" width="49.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ygz-0K-hof">
                                         <rect key="frame" x="0.0" y="114" width="414" height="300"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="300" id="sX1-qp-lS4"/>
+                                            <constraint firstAttribute="height" priority="750" constant="300" id="sX1-qp-lS4"/>
                                         </constraints>
                                     </mapView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ygz-0K-hof" secondAttribute="trailing" id="J1h-vZ-S0M"/>
+                                    <constraint firstItem="ygz-0K-hof" firstAttribute="leading" secondItem="zGC-QS-OYs" secondAttribute="leading" id="ljH-Ts-qQj"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="zGC-QS-OYs" firstAttribute="top" secondItem="9SU-Rj-3a4" secondAttribute="top" constant="16" id="0kO-uu-nkW"/>
                             <constraint firstItem="9SU-Rj-3a4" firstAttribute="trailing" secondItem="zGC-QS-OYs" secondAttribute="trailing" id="1Id-Zx-X78"/>
+                            <constraint firstItem="9SU-Rj-3a4" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="zGC-QS-OYs" secondAttribute="bottom" id="HcU-gb-PkV"/>
                             <constraint firstItem="zGC-QS-OYs" firstAttribute="width" secondItem="9SU-Rj-3a4" secondAttribute="width" id="eNY-eo-2jK"/>
                             <constraint firstItem="ygz-0K-hof" firstAttribute="width" secondItem="9SU-Rj-3a4" secondAttribute="width" id="owe-yu-T8x"/>
                             <constraint firstItem="zGC-QS-OYs" firstAttribute="leading" secondItem="9SU-Rj-3a4" secondAttribute="leading" id="vEh-3U-sgf"/>
