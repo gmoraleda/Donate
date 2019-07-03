@@ -56,6 +56,33 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		F124157F22CCA84F00CC4503 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F1E68B3F22CB79FD005A52B3 /* Assets.xcassets */,
+				F18A42FD22CB84E200CE6EE6 /* Donate.entitlements */,
+				F1E68B4422CB79FD005A52B3 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F124158022CCA89300CC4503 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F1E68B3A22CB79F9005A52B3 /* ViewController.swift */,
+				F1E68B4A22CB7C8A005A52B3 /* DetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F124158122CCA8A800CC4503 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F18A42FB22CB82FF00CE6EE6 /* CarReservation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		F1E68B2C22CB79F9005A52B3 = {
 			isa = PBXGroup;
 			children = (
@@ -75,16 +102,13 @@
 		F1E68B3722CB79F9005A52B3 /* Donate */ = {
 			isa = PBXGroup;
 			children = (
-				F124157E22CCA6BF00CC4503 /* Storyboards */,
 				F1E68B3822CB79F9005A52B3 /* AppDelegate.swift */,
-				F1E68B3F22CB79FD005A52B3 /* Assets.xcassets */,
-				F18A42FB22CB82FF00CE6EE6 /* CarReservation.swift */,
-				F1E68B4A22CB7C8A005A52B3 /* DetailViewController.swift */,
-				F124157A22CB92CB00CC4503 /* ReservationsManager.swift */,
-				F18A42FD22CB84E200CE6EE6 /* Donate.entitlements */,
-				F1E68B4422CB79FD005A52B3 /* Info.plist */,
-				F1E68B3A22CB79F9005A52B3 /* ViewController.swift */,
 				F124157C22CB9CC500CC4503 /* HelperExtensions.swift */,
+				F124157A22CB92CB00CC4503 /* ReservationsManager.swift */,
+				F124158122CCA8A800CC4503 /* Models */,
+				F124157F22CCA84F00CC4503 /* Resources */,
+				F124157E22CCA6BF00CC4503 /* Storyboards */,
+				F124158022CCA89300CC4503 /* ViewControllers */,
 			);
 			path = Donate;
 			sourceTree = "<group>";
